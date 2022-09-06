@@ -7,6 +7,81 @@
     <title>html04 - 미디어 관련</title>
 </head>
 <body>
-    
+    <h1>미디어 관련 요소</h1>
+    <h2>이미지 5개 이상 - jpg(jfif), png, gifm webpm, svg</h2>
+    <div class="wrap">
+        <ul>
+            <li><img src="../ex/jp1.jpg" width="200" heigh="300" alt="사진1" title="사진1"></li>
+            <li><img src="../ex/jp2.jpg" width="200" heigh="300" alt="사진2" title="사진2"></li>
+            <li><img src="../ex/jp3.jpg" width="200" heigh="300" alt="사진3" title="사진3"></li>
+            <li><img src="../ex/jp4.jpg" width="200" heigh="300" alt="사진4" title="사진4"></li>
+            <li><img src="../ex/jp5.jpg" width="200" heigh="300" alt="사진5" title="사진5"></li>
+        </ul>
+    </div>
+    <h2>동영상 3개 이상 - mp4, webm, ogv</h2>
+    <div>
+        <ul>
+            <li>
+                <video src="../ex/aespa.mp4" width="200" heigh="300" poster="../ex/hd-wallpaper-g683d27e8d_1920.jpg" controls autoplay muted></video>
+                <div class="comment">
+                    <h3>video 요소의 태그 속성</h3>    
+                    <p>src : 해당 비디오 파일의 경로(위치와 파일명)</p>
+                    <p>poster : 대기화면(썸네일) 이미지의 파일 경로</p>
+                    <p>cotrols : 비디오 재생 제어 패널 표시</p>
+                    <p>autoplay : 자동재생</p>
+                    <p>muted : 무음처리(자동 재생시 반드시 필요함)</p>
+                    <p>loop : 반복재생</p>
+                    <p>width : 폭, height : 높이</p>
+                </div>
+            </li>
+            <li>
+                <video width="300" height="200" controls autoplay muted>
+                    <source src="../ex/newjeans.mp4" type="video/mp4">
+                    <source src="../ex/newjeans.webm" type="video/webm">
+                    <source src="../ex/newjeans.ogv" type="video/ogg">
+                </video>
+                <div class="comment">
+                    <h3>브라우저 마다 재생가능한 파일</h3>
+                    <p>mp4,webm,ogv 파일이 브라우저 마다 각기 다르게 재생 기능 제공됨</p>
+                    <table border="1">
+                        <thead>
+                            <tr><th>브라우저</th><th>mp4</th><th>WebM</th><th>Ogv</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>IE</td><td>YES</td><td>NO</td><td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>Chrome</td><td>YES</td><td>YES</td><td>YES</td>
+                            </tr>
+                            <tr>
+                                <td>Firefox</td><td>YES</td><td>YES</td><td>YES</td>
+                            </tr>
+                            <tr>
+                                <td>Safari</td><td>YES</td><td>NO</td><td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>Opera</td><td>YES</td><td>YES</td><td>YES</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </li>
+            <li>
+                <video src=""></video>
+            </li>
+            <iframe width="682" height="384" src="https://www.youtube.com/embed/IAVQhpxwZE4" title="거울셀카 찍는 루피 만들기 (귀여워요)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+        <h2>사운드 3개 이상 - mp3,ogg,wav</h2>
+        <div class="wrap">
+            <ul>
+                <li><audio controls></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
